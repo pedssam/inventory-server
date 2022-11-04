@@ -6,7 +6,26 @@ const path = require( 'path' )
 
 const app = express()
 
-app.use( express.static( path.join(__dirname + '/public' ) ) )
+app.use( express.static( path.join(__dirname , '/public' ) ) )
+
+app.get( '/category', (req, res) => {
+    res.sendFile('/public/index.html', { root: __dirname })
+})
+
+app.get( '/product', (req, res) => {
+    res.sendFile('/public/index.html', { root: __dirname })
+})
+
+app.get( '/receipt', (req, res) => {
+    res.sendFile('/public/index.html', { root: __dirname })
+})
+
+app.get( '/login', (req, res) => {
+    res.sendFile('/public/index.html', { root: __dirname })
+})
+
+// 
+
 const port = process.env.PORT || 5000
 
 app.use( bodyParser.urlencoded( { extended: false } ) )
@@ -198,6 +217,17 @@ app.post( '/login', cors(), ( req, res ) => {
         username, password
     } = req.body
     let sql = `SELECT * FROM users WHERE username = '${ username }' AND password = '${ password }'`
+    db.query( sql, ( err, result ) => {
+        if( err ) {
+            throw err
+        }
+        res.send( result )
+    })
+})
+
+app.post( '/delete-receipts', cors(), ( req, res ) => {
+    const { selected } = req.body
+    let sql = `UPDATE product_stock_history SET deleted = 1 WHERE id IN (${ selected.join(',') })`
     db.query( sql, ( err, result ) => {
         if( err ) {
             throw err
