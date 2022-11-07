@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecc46a79.css",
-    "main.js": "/static/js/main.43f2dc67.js",
+    "main.css": "/static/css/main.4526b5ec.css",
+    "main.js": "/static/js/main.e45438dc.js",
     "static/js/703.4c253f4d.chunk.js": "/static/js/703.4c253f4d.chunk.js",
     "static/js/142.eddc8896.chunk.js": "/static/js/142.eddc8896.chunk.js",
     "static/media/Gotham-Light.otf": "/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
@@ -9,13 +9,13 @@
     "static/media/Gotham.woff": "/static/media/Gotham.41f72584e55e28f216db.woff",
     "static/media/Logout.svg": "/static/media/Logout.79a1f0f6171c5058f42a2eb084dbb54a.svg",
     "index.html": "/index.html",
-    "main.ecc46a79.css.map": "/static/css/main.ecc46a79.css.map",
-    "main.43f2dc67.js.map": "/static/js/main.43f2dc67.js.map",
+    "main.4526b5ec.css.map": "/static/css/main.4526b5ec.css.map",
+    "main.e45438dc.js.map": "/static/js/main.e45438dc.js.map",
     "703.4c253f4d.chunk.js.map": "/static/js/703.4c253f4d.chunk.js.map",
     "142.eddc8896.chunk.js.map": "/static/js/142.eddc8896.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc46a79.css",
-    "static/js/main.43f2dc67.js"
+    "static/css/main.4526b5ec.css",
+    "static/js/main.e45438dc.js"
   ]
 }
